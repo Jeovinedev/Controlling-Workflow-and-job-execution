@@ -8,8 +8,8 @@ jobs:
             node-version: [14, 16]
             operating-system: [ubuntu-latest,windows-latest]
             include: # allows us to run stand alone combination and add brand new keys.
-                - node-version: 18
-                - operating-system: ubuntu-latest
+             - node-version: 18
+             - operating-system: ubuntu-latest
             # exclude:
             #     - node-version: 14
             #     - operating-system: windows-latest
