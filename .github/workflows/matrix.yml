@@ -10,9 +10,9 @@ jobs:
             include: # allows us to run stand alone combination and add brand new keys.
              - node-version: 18
                operating-system: ubuntu-latest
-            # exclude:
-            #     - node-version: 14
-            #     - operating-system: windows-latest
+            exclude:
+              - node-version: 14
+                operating-system: windows-latest
     runs-on: ${{matrix.operating-system}}
     steps:
       - name: Get code
